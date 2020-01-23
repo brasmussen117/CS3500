@@ -4,6 +4,8 @@ Group Projects in Intro to Web Tech
 # Authors
 
 Brenden Rasmussen
+&
+Gabe Soto
 
 # Project Description
 
