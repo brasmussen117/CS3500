@@ -3,33 +3,58 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
-<title>Home: Motorcycles</title>
-<link href="midterm.css" rel="stylesheet" type="text/css">
+<title>Motorcycles</title>
+<!-- <link href="midterm.css" rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 
 <body>
 	
 	<div id="wrapper">
 		
-	<header>
-		<h1>Motorcycles</h1>
+	<header class="lead">
+<!-- 		<h1>Motorcycles</h1>
+ -->	
+<!-- 		<nav class="navbar-collapse">
+			<a class="nav-item" href="index.html">Home</a>&nbsp;
+			<a class="nav-item" href="types.html">Types</a>&nbsp;
+			<a class="nav-item" href="trips.html">Trips</a>&nbsp;
+			<a class="nav-item" href="training.html">Training</a>
+		</nav> -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+	<div class="collapse navbar-collapse" id="navbarColor01">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="types.html">Types</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="trips.html">Trips</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="training.html">Training</a>
+	      </li>
+	    </ul>
+	</div>
+</nav>
 	</header>
 	
-	<nav>
-		<a href="index.html">Home</a>&nbsp;
-		<a href="types.html">Types</a>&nbsp;
-		<a href="trips.html">Trips</a>&nbsp;
-		<a href="training.html">Training</a>
-	</nav>
-		
-	<div id="homehero"></div>
-		
+<!-- 	<div id="homehero"></div>-->		
 	<main>
-		<h2>Beginner's Intro to Motorcycles</h2>
-		
-		<p>Have you ever dreamed about riding on a motorcycle? If that is a yes, you came to the right place! This website has all the information a newbie might ponder about these two wheel dream machines.</p>
-		
-		<h3>Monthly Meet Ups:</h3>
+		<div class="jumbotron">
+			<h2 class="display-1">Beginner's Intro to Motorcycles</h2>
+			
+			<p class="lead">Have you ever dreamed about riding on a motorcycle? If that is a yes, you came to the right place! This website has all the information a newbie might ponder about these two wheel dream machines.</p>
+		</div>
+
+		<h3 class="display-4">Monthly Meet Ups:</h3>
 		
 		<p>Every month, weather permitting, we have bike nights! Come visit our facility on the start of each month. We will have food trucks, stunt shows,group rides and bike shows. You don't need a motorcycle to enjoy the fun!</p>
 		
@@ -39,10 +64,12 @@
 		
 			<span class="company"> <a href="https://www.zeiglermotorsports.com/">Motorcycle Dealership</a></span>
 		
-			<p> 
-				<a href="https://www.google.com/maps/place/Zeigler+Motorsports/@42.251955,-85.529884,15z/data=!4m2!3m1!1s0x0:0x4c94c950cf1bdb82?sa=X&ved=2ahUKEwixh4uXgaTlAhWvHDQIHRLcBMYQ_BIwDXoECAgQCA">5001 Park Cir Dr, Kalamazoo, MI 49048</a><br>
-				123-456-7890
-			</p>
+			<address>
+				<a href="https://www.google.com/maps/place/Zeigler+Motorsports/@42.251955,-85.529884,15z/data=!4m2!3m1!1s0x0:0x4c94c950cf1bdb82?sa=X&ved=2ahUKEwixh4uXgaTlAhWvHDQIHRLcBMYQ_BIwDXoECAgQCA">
+					5001 Park Cir Dr,<br>
+				Kalamazoo, MI 49048</a><br>
+				<a href="tel:123-555-7890">123-456-7890</a>
+			</address>
 			
 		</div>
 		
