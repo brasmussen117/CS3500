@@ -1,0 +1,15 @@
+.center-text {
+	text-align: center;
+}
+
+#catalogList li:nth-child(even) {
+	background-color: lightgray;
+}
+#catalogList li:nth-child(odd) {
+	border: solid 1px darkgray;
+	border-radius: .25em;
+}
+#catalogList li:hover {
+	font-weight: bold;
+	border: solid 1px black;
+}
