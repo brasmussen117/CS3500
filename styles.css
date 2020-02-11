@@ -1,0 +1,473 @@
+
+@charset "utf-8";
+
+/* --------basic default styles of the page -----------*/
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: black;
+	font-size: 100%;
+	color: #303847;
+}
+
+/* ------------content areas of web page----------------- */
+
+#wrapper {
+	margin: 0 auto;
+	width: 80%;
+	min-width: 768px;
+	max-width: 1200px;
+	background-color: pink;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #fff;
+}
+
+header {
+	/*background-image: url("images/festival-crowd-1100x733.jpg");
+	background-repeat: no-repeat;
+	*/
+	height: 130px;
+	background-color: black;
+	color: #fff;
+	font-size: 150%;
+	padding: 10px 10px 10px 155px;
+}
+
+nav {
+	text-align: center;
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	font-size: 1.5em;
+}
+
+main {
+	padding: 10px 20px 10px 20px;
+	background-color: #fff;
+	overflow: auto;
+	display: block;
+}
+
+#mainphoto {
+	height: 300px;
+	background-image: url("images/festival-crowd-1100x733.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 60% 30%;
+}
+
+footer {
+	background-color: black;
+	font-size: 75%;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+/* ------------------------------ */
+
+h1 {
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+
+h2 {
+	color: black;
+}
+
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+h4 {
+	color: black;
+}
+
+li {
+	line-height: 175%;
+}
+
+dl {
+	font-family:  Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	overflow: hidden; /*fixes padding issue with imgs/videos */
+}
+
+dt {
+	font-size: 80%;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+dd {
+	line-height: 150%;
+}
+
+main p {
+	line-height: 200%;
+}
+
+figure {
+	float: right;
+	margin: 0 0 0 15px;
+	padding: 0;
+	max-width: 50%;
+	max-height: 50%;
+
+}
+
+figcaption {
+		text-align: center;
+		color: #999;
+		font-size: .8em;
+		font-family: Arial, sans-serif;
+		padding-top: 5px;
+}
+
+.faq {
+	
+	margin: 0 0 0 15px;
+	padding: 0;
+	max-width: 50%;
+	max-height: 50%;
+}
+
+/* ------ default link styles, must be different from nav & footer styles ------ */
+
+a:link {
+	color:#1907FF;
+}
+
+a:visited {
+	color: #000000;
+}
+
+a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:active {
+	color: #FFFFFF;
+}
+
+/* ------------navigation link styles ------------------*/
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a:link {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 17px 8px 17px;
+}
+
+nav a:visited {
+	color: #FFFFFF
+}
+
+nav a:hover {
+	color: #1b2b47;
+	background-color: #8abede;
+}
+
+nav a:active {
+	background-color: white;
+}
+
+/*-------------- footer link styles-------------- */
+
+footer a:link{
+	color: #FFFFFF
+}
+footer a:visited {
+	color: #00DFFB
+}
+footer a:hover {
+	color: #FF0509;
+	text-decoration: none;
+}
+footer a:active {
+	color: #8abede;
+}
+
+/*** video styles ***/
+
+video {
+	border: 1px solid black;
+}
+
+
+.video-container-youtube {
+	float: right;
+	margin-left: 25px;
+}
+
+.video-container-vimeo {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.video-container {
+	float: left;
+	margin-left: 0;
+	margin-right: 25px;
+	width: 482px;
+}
+
+.video-container-vimeo2 {
+	margin: 0 auto;
+	padding-top: 100px;
+	padding-bottom: 10px;
+	width: 500px;
+}
+
+.video-container-archive {
+	width: 50%;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
+
+.backtotop {
+	clear: both; /* clears all floats*/
+}
+
+
+/*iPad Retina in landscape mode */
+/*
+@media only screen 
+	and (min-width: 768px)
+	and (max-width: 1024px)
+	and (orientation: landscape)
+	and (-webkit-min-device-pixel-ratio: 2)
+{
+	body {
+		background-color: white;
+		margin: 0;
+		padding: 0;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	}
+	
+	#wrapper {
+		width: 1024px;
+		background-color: #000000;
+		border: 0;
+	}
+	
+	header {
+		background-image: url("assets/landscapeheader.jpg");
+		background-repeat: repeat;
+		height: 130px;
+		background-color: #869dc7;
+		color: #000000;
+		font-size: 150%;
+		padding: 10px 10px 10px 155px;
+	}
+	
+	nav {
+		float: left;
+		width: 200px;
+		border-top: 1px solid #fff;
+	}
+	
+	nav a:link {
+		display: block;
+		border-bottom: 1px solid #fff;
+		background-color: #000000;
+		font-size: 85%;
+	}
+	
+	main {
+		background-color: #E57F30;
+	}
+	
+	footer {
+		background-color: black;
+		color: white;
+	}
+	
+	footer a:visited {
+		color: #00DFFB
+	}
+	
+	footer a:hover {
+		color: #FF0509;
+		text-decoration: none;
+	}
+	
+	footer a:active {
+		color: #000000;
+	}
+	
+	p {
+		color: white;
+	}
+	
+	h2 {
+		color: black;
+	}
+	
+	h3 {
+		color: black;
+	}
+	
+	dt {
+		color: black;
+	}
+	
+	dd {
+		color: white;
+	}
+	
+	ul {
+		color: white;
+	}
+	
+	#lighthousehero {
+	height: 300px;
+	background-image: url("assets/lighthouselandscape.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 60% 30%;
+	}
+	
+	.video-container-archive {
+		float: left;
+	}
+}
+
+/*iPad Retina in portrait mode */
+
+@media only screen
+	and (min-width: 768px)
+	and (max-width: 1024px)
+	and (orientation: portrait)
+	and (-webkit-min-device-pixel-ratio: 2)
+{
+	body {
+		background-color: gold;
+		margin: 0;
+		padding: 0;
+		font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	}
+	
+	#wrapper {
+		background-color: #0CE8A7;
+		width: 768px;
+		border: 0;
+	}
+	
+	header {
+		background-image: url("assets/portraitheader.jpg");
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: auto;
+		
+		height: 130px;
+		background-color: #0B0000;
+		color: #fff;
+		font-size: 150%;
+		padding: 10px 10px 10px 155px;
+	}
+	
+	nav {
+		float: right;
+		width: 150px;
+		border: 1px solid #fff;
+	}
+	
+	nav a:link {
+		display: block;
+		color: black;
+		background-color: #0CE8A7;
+		font-size: 65%;
+		border-bottom: 1px solid black;
+	}
+	
+	main {
+		background-color: black;
+	}
+	
+	footer {
+		background-color: #0CE8A7;
+		color: white;
+	}
+	
+	footer a:visited {
+		color: black;
+	}
+	
+	footer a:hover {
+		color: red;
+	}
+	
+	a:link {
+		color: #0CE8A7;
+	}
+	
+	a:visited {
+		color: white;
+	}
+	p {
+		color: white;
+	}
+	
+	h2 {
+		color: #0CE8A7;
+	}
+	
+	h3 {
+		color: #0CE8A7;
+	}
+	
+	dt {
+		color: #0CE8A7;
+	}
+	
+	dd {
+		color: white;
+	}
+	
+	ul {
+		color: white;
+	}
+	
+	.video-container-vimeo {
+		width: 568px;
+		padding-bottom: 10px;
+	}
+	
+	.video-container-archive {
+		float: left;
+		margin: 0 auto;
+	}
+	
+	.video-container {
+		padding-bottom: 10px;
+		padding-right: 50px;
+	}
+	
+	
+	#lighthousehero {
+	height: 300px;
+	background-image: url("assets/lighthouseportrait.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 60% 30%;
+    }
+    */
+}
