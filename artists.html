@@ -2,16 +2,16 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-	<title>Topazity | Artists</title>
-	<!-- <link href="midterm.css" rel="stylesheet" type="text/css"> -->
+	<title>Artists | Topazity</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="main-b.css">
 </head>
 
 <body>
 			
 <header class="lead">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<a class="navbar-brand" href="#">Topaz Music Festival</a>
+			<a class="navbar-brand" href="index.html">Topazity Music Festival</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -19,7 +19,7 @@
 		<div class="collapse navbar-collapse" id="navbarColor01">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 				<a class="nav-link" href="types.html">Types</a>
@@ -35,57 +35,54 @@
 	</nav>
 </header>
 <main>
-	<div id="headliners">
-		<h2>Headliners</h2>
-		<table class="table-light">
-			<!-- <caption>Headliners</caption> -->
-			<thead>
-				<tr>
-					<th scope="col">Artist_1</th>
-					<th scope="col">Artist_2</th>
-					<th scope="col">Artist_3</th>
-				</tr>
-			</thead>
-			<tfoot>
-				<tr>
-					<td>Link_1</td>
-					<td>Link_2</td>
-					<td>Link_3</td>
-				</tr>
-			</tfoot>
-			<tbody>
-				<tr>
-					<td>Image_1</td>
-					<td>Image_2</td>
-					<td>image3</td>
-				</tr>
-				<tr>
-					<td>name1</td>
-					<td>name2</td>
-					<td>name3</td>
-				</tr>
-				<tr>
-					<td>blurb1</td>
-					<td>blurb2</td>
-					<td>blurb3</td>
-				</tr>
-			</tbody>
-		</table>
+	<div class="jumbotron" id="headliners">
+		<div class="container text-center">
+			<h1>Artists</h1>
+		</div>
 	</div>
+	<div class="container-fluid text-center" id="headliners">    
+		<div class="row">
+			<div class="col-sm-3">
+				<h3>artist1</h3>
+				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+			</div>
+			<div class="col-sm-3"> 
+				<h3>artist2</h3>
+				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+			</div>
+			<div class="col-sm-3"> 
+				<h3>artist3</h3>
+				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+			</div>
+			<div class="col-sm-3">
+				<h3>artist4</h3>
+				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+			</div>
+		</div>
+	</div>
+
 	<hr>
-	<div id="acts">
+	<div class="container-fluid" id="acts">
+		<div class="col-2"><p>act1</p></div>
+		<div class="col-2"><p>act1</p></div>
+		<div class="col-2"><p>act1</p></div>
+		<div class="col-2"><p>act1</p></div>
+		<div class="col-2"><p>act1</p></div>
+		<div class="col-2"><p>act1</p></div>
+		<div class="col-sm-2"><p>act1</p></div>
+		<div class="col-sm-2"><p>act1</p></div>
+		<div class="col-sm-2"><p>act1</p></div>
+		<div class="col-sm-2"><p>act1</p></div>
+		<div class="col-sm-2"><p>act1</p></div>
+		<div class="col-sm-2"><p>act1</p></div>
+	</div>
+	<div class="list-group">
 		<h2>Also Appearing</h2>
-		<ul class="list-group">
-			<li class="list-group-item">act1</li>
-			<li class="list-group-item">act2</li>
-			<li class="list-group-item">act3</li>
-			<li class="list-group-item">act4</li>
-			<li class="list-group-item">act5</li>
-			<li class="list-group-item">act6</li>
-			<li class="list-group-item">act7</li>
-			<li class="list-group-item">act8</li>
-			<li class="list-group-item">act9</li>
-		</ul>
+		<p class="list-group-item">act1</p>
+		<p class="list-group-item">act2</p>
+		<p class="list-group-item">act3</p>
+		<p class="list-group-item">act4</p>
+		<p class="list-group-item">act5</p>
 	</div>
 
 </main>
