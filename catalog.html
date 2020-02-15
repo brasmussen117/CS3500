@@ -3,51 +3,88 @@
 <head>
 	<meta charset="utf-8">
 	<title>Catalog | Topazity</title>
+	<link rel="icon" href="images/blue-topaz-transparent.ico" type="image/icon" sizes="16x16">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="main-b.css">
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-	<header class="lead">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<a class="navbar-brand" href="#">Topazity Music Festival</a>
-			<button class="btn btn-primary-dark dropdown-toggle" type="button" data-toggle="dropdown" data-target="#navbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<ul id="navbar" class="dropdown-menu dropdown-menu-right">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Types</a></li>
-				<li><a href="#">Trips</a></li>
-				<li><a href="#">Training</a></li>
-			</ul>
-		</nav>
+<body id="top">
+	
+	<div id="wrapper">
+	
+	<header>
+		<h1>Topazity</h1>
 	</header>
 	
-	<main>
-		<div class="jumbotron center-text">
-			<h1>Catalog</h1>
-			<p>here are some of our upcoming events</p>
-		</div>
-		<ul id="catalogList" class="list-group">
-			<li class="list-group-item">event1</li>
-			<li class="list-group-item">event1</li>
-			<li class="list-group-item">event1</li>
-			<li class="list-group-item">event1</li>
-			<li class="list-group-item">event1</li>
-			<li class="list-group-item">event1</li>
+	<div id="mainphoto"></div>
+		
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a id="activeLink" href="#">Catalog</a></li>
+			<li><a href="artists.html">Artists</a></li>
+			<li><a href="venue.html">Venue</a></li>
+			<li><a href="media.html">Media</a></li>
 		</ul>
-	</main>
+	</nav>
+
+<main>
+	<div class="jumbotron text-center" id="myJumbotron">
+		<h1>Catalog</h1>
+		<p>of upcoming events</p>
+	</div>
+
+	<table class="table table-hover table-striped">
+		<thead>
+			<tr>
+				<th>where</th>
+				<th>when</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Colorado Springs, CO</td>
+				<td>Friday, April 10, 2020</td>
+				<td>Sunday, April 12, 2020</td>
+			</tr>
+			<tr>
+				<td>Seattle, WA</td>
+				<td>Friday, May 1, 2020</td>
+				<td>Sunday, May 3, 2020</td>
+			</tr>
+			<tr>
+				<td>Houston, TX</td>
+				<td>Friday, June 5, 2020</td>
+				<td>Sunday, June 7, 2020</td>
+			</tr>
+			<tr>
+				<td>Memphis, TN</td>
+				<td>Friday, July 10, 2020</td>
+				<td>Sunday, July 12, 2020</td>
+			</tr>
+			<tr>
+				<td>Chicago, IL</td>
+				<td>Friday, August 7, 2020</td>
+				<td>Sunday, August 9, 2020</td>
+			</tr>
+			<tr>
+				<td>Detroit, MI</td>
+				<td>Friday, August 28, 2020</td>
+				<td>Sunday, August 30, 2020</td>
+			</tr>
+		</tbody>
+	</table>
+</main>
 	
-	<footer>
-		<p>&copy; 2019 Motorcycles . All rights reserved.<br>
-		   Gabriel Soto<br>
-		<a href="mailto:gsoto3542@mail.kvcc.edu">gsoto3542@mail.kvcc.edu</a><br>
-		last updated: <!-- #BeginDate format:Am1 -->October 17, 2019<!-- #EndDate --><br>
-		<a href="../index.html">Class Home Page</a></p>
-	</footer>
+<footer>
+	<p>&copy; 2020 Topazity. All rights reserved.<br>
+	   Gabriel Soto & Brenden Rasmussen<br>
+	last updated: <!-- #BeginDate format:Am1 -->November 5, 2019<!-- #EndDate --><br>
+	</p>
+</footer>
+</div>
 </body>
-	
 </html>

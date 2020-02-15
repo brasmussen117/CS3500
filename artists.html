@@ -3,86 +3,89 @@
 <head>
 	<meta charset="utf-8">
 	<title>Artists | Topazity</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="main-b.css">
+	<link rel="icon" href="images/blue-topaz-transparent.ico" type="image/icon" sizes="16x16">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
-			
-<header class="lead">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<a class="navbar-brand" href="index.html">Topazity Music Festival</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarColor01">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-				<a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="types.html">Types</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="trips.html">Trips</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="training.html">Training</a>
-				</li>
-			</ul>
-		</div>
+<body id="top">
+	
+	<div id="wrapper">
+	
+	<header>
+		<h1>Topazity</h1>
+	</header>
+	
+	<div id="mainphoto"></div>
+		
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="catalog.html">Catalog</a></li>
+			<li><a id="activeLink" href="#">Artists</a></li>
+			<li><a href="venue.html">Venue</a></li>
+			<li><a href="media.html">Media</a></li>
+		</ul>
 	</nav>
-</header>
+	
 <main>
-	<div class="jumbotron" id="headliners">
-		<div class="container text-center">
-			<h1>Artists</h1>
-		</div>
+	<div class="jumbotron" id="myJumbotron">
+		<h1>Artists</h1>
 	</div>
-	<div class="container-fluid text-center" id="headliners">    
-		<div class="row">
-			<div class="col-sm-3">
-				<h3>artist1</h3>
-				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-			</div>
-			<div class="col-sm-3"> 
-				<h3>artist2</h3>
-				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-			</div>
-			<div class="col-sm-3"> 
-				<h3>artist3</h3>
-				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-			</div>
-			<div class="col-sm-3">
-				<h3>artist4</h3>
-				<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-			</div>
+	<h2 class="text-center">Featuring</h2>
+	<br>
+	<div class="card-deck" id="headliners">
+		
+		<div class="card bg-black text-white">
+			<div class="card-header text-center">MARSHMELLO</div>
+			<a class="stretched-link" href="#">
+				<img src="images/Marshmello_sm.jpg" class="card-img-bottom" style="width:100%" alt="MARSHMELLO"></a>
+		</div>
+		<div class="card bg-black text-white">
+			<div class="card-header text-center">POST MALONE</div>
+			<a class="stretched-link" href="#">
+				<img src="images/Post_Malone_sm_crop.jpg" class="card-img-bottom" style="width:100%" alt="POST MALONE"></a>
+		</div>
+		<div class="card bg-black text-white">
+			<div class="card-header text-center">GRYFFIN</div>
+			<a class="stretched-link" href="#">
+				<img src="images/Griffyn_sm_crop.jpg" class="card-img-bottom" style="width:100%" alt="GRYFFIN"></a>
+		</div>
+		<div class="card bg-black text-white">
+			<div class="card-header text-center">MAJOR LAZER</div>
+			<a class="stretched-link" href="#">
+				<img src="images/Major_Lazer_sm_crop.jpg" class="card-img-bottom" style="width:100%" alt="MAJOR LAZER"></a>
 		</div>
 	</div>
 
 	<hr>
-	<div class="container-fluid" id="acts">
-		<div class="col-2"><p>act1</p></div>
-		<div class="col-2"><p>act1</p></div>
-		<div class="col-2"><p>act1</p></div>
-		<div class="col-2"><p>act1</p></div>
-		<div class="col-2"><p>act1</p></div>
-		<div class="col-2"><p>act1</p></div>
-		<div class="col-sm-2"><p>act1</p></div>
-		<div class="col-sm-2"><p>act1</p></div>
-		<div class="col-sm-2"><p>act1</p></div>
-		<div class="col-sm-2"><p>act1</p></div>
-		<div class="col-sm-2"><p>act1</p></div>
-		<div class="col-sm-2"><p>act1</p></div>
-	</div>
-	<div class="list-group">
-		<h2>Also Appearing</h2>
-		<p class="list-group-item">act1</p>
-		<p class="list-group-item">act2</p>
-		<p class="list-group-item">act3</p>
-		<p class="list-group-item">act4</p>
-		<p class="list-group-item">act5</p>
+	<h2 class="text-center">Also Appearing</h2>
+	<div class="list-group list-group-flush">
+		
+		<p class="list-group-item">DAFT PUNK</p>
+		<p class="list-group-item">FLUME</p>
+		<p class="list-group-item">LASERFACE</p>
+		<p class="list-group-item">THE HO&#356;&#356;EST S&#280;X IMAGINABLE</p>
+		<p class="list-group-item">SUSAN SERRATED</p>
+		<p class="list-group-item">GREY BIRD</p>
+		<p class="list-group-item">PRETTY MILLENNIALS</p>
+		<p class="list-group-item">CUNNINGHAM</p>
+		<p class="list-group-item">ATOMIC CHEESE</p>
+		<p class="list-group-item">MARILYN HANSON</p>
+		<p class="list-group-item">DEADMAU5</p>
+		<p class="list-group-item">RAGE OUTSIDE THE BOX</p>
 	</div>
 
 </main>
+
+<footer>
+	<p>&copy; 2020 Topazity. All rights reserved.<br>
+	   Gabriel Soto & Brenden Rasmussen<br>
+	last updated: <!-- #BeginDate format:Am1 -->November 5, 2019<!-- #EndDate --><br>
+	</p>
+</footer>
+
+</div>
+</body>
+</html>

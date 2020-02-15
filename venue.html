@@ -3,62 +3,57 @@
 <head>
 	<meta charset="utf-8">
 	<title>Venue | Topazity</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="main-b.css">
+	<link rel="icon" href="images/blue-topaz-transparent.ico" type="image/icon" sizes="16x16">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
-			
-<header class="lead">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-			<a class="navbar-brand" href="#">Topazity Music Festival</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarColor01">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="types.html">Types</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="trips.html">Trips</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="training.html">Training</a>
-				</li>
-			</ul>
-		</div>
+<body id="top">
+	
+<div id="wrapper">
+	
+	<header>
+		<h1>Topazity</h1>
+	</header>
+	
+	<div id="mainphoto"></div>
+		
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="catalog.html">Catalog</a></li>
+			<li><a href="artists.html">Artists</a></li>
+			<li><a id="activeLink" href="#">Venue</a></li>
+			<li><a href="media.html">Media</a></li>
+		</ul>
 	</nav>
-</header>
+
 <main>
-	<div class="card mb-3 center-text">
-		<h3 class="card-header">Colorado Springs</h3>
-		<div class="card-body">
-			<h5 class="card-title">Mendeleev Memorial Park</h5>
+	<div class="jumbotron" id="myJumbotron">
+		<h1>Venue</h1>
+	</div>
+	<h1 class="text-center"></h1>
+	<div class="card text-center bg-dark">
+		<h3 class="card-header text-white">Colorado Springs</h3>
+		<div class="card-body text-white">
+			<h5 class="card-title text-white">Mendeleev Memorial Park</h5>
 			<!-- <h6 class="card-subtitle text-muted">Support card subtitle</h6> -->
 		</div>
-		<img class="img-responsive center-block" height="200px"; width="400px"; src="images/MendeleevMemParkSm.jpg" alt="Venue" title="Venue">
+		<img class="card-img" height="200px"; width="400px"; src="images/MendeleevMemParkSm.jpg" alt="Venue" title="Venue">
 		<div class="card-body">
 			<p class="card-text">This is the beautiful Mendeleev Memorial Park near Colorado Springs.</p>
 		</div>
 		<ul class="list-group list-group-flush">
-		<li class="list-group-item">Incredible spaces with plenty of shade</li>
+		<li class="list-group-item">Incredible spaces with greenery and shade</li>
 		<li class="list-group-item">Restroom facilities throughout the area</li>
-		<li class="list-group-item">Vestibulum at eros</li>
+		<li class="list-group-item">
+			<a href="#" class="stretched-link">ColoradoSprings.gov</a>
+		</li>
 		</ul>
-		<div class="card-body">
-			<a href="#" class="card-link">Mendeleev Memorial Park</a>
-			<a href="#" class="card-link">ColoradoSprings.gov</a>
-		</div>
-		<div class="card-footer text-muted">
-		2 days ago
-		</div>
 	</div>
-	<div class="card">
+	<!-- <div class="card">
 		<div class="card-body">
 			<h4 class="card-title">Card title</h4>
 			<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -66,5 +61,16 @@
 			<a href="#" class="card-link">Card link</a>
 			<a href="#" class="card-link">Another link</a>
 		</div>
-	</div>
+	</div> -->
 </main>
+
+<footer>
+	<p>&copy; 2020 Topazity. All rights reserved.<br>
+	   Gabriel Soto & Brenden Rasmussen<br>
+	last updated: <!-- #BeginDate format:Am1 -->November 5, 2019<!-- #EndDate --><br>
+	</p>
+</footer>
+
+</div>
+</body>
+</html>
