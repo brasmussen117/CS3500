@@ -17,7 +17,7 @@ body {
 	width: 80%;
 	min-width: 768px;
 	max-width: 1200px;
-	background-color: pink;
+	background-color: white;
 	border-width: 5px;
 	border-style: solid;
 	border-color: #fff;
@@ -31,7 +31,7 @@ header {
 	background-color: black;
 	color: #fff;
 	font-size: 150%;
-	padding: 10px 10px 10px 155px;
+	padding: 10px;
 }
 
 nav {
@@ -267,7 +267,7 @@ video {
     color: white;
 	background-color: lightgray;
 	margin: 10px;
-
+}
 
 /*Brenden's styles*/
 
@@ -286,4 +286,79 @@ video {
 
 .bg-black {
 	background-color: black;
+}
+
+
+
+/************** AFTER DELTING BOOTSTRAP *******************/
+.jumbotron {
+	text-align: center;
+	color: white;
+	background-color: darkgray;
+	padding: 10px 10px;
+	background-image: url(images/hangout_concert_crowdx2000.jpeg);
+	background-size: 100%;
+	background-position: 50% 75%;
+	background-repeat: no-repeat;
+	background-size: center;
+}
+
+
+/* table formatting */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: lightgray}
+
+tr:hover{
+	background-color: lightblue;
+}
+
+thead tr {
+	background-color: lightgrey;
+}
+
+thead tr:hover {
+	background-color: lightgrey;
+}
+
+.mediapage{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+.electricforest {
+	height: 400px;
+}
+
+.medialeftphoto {
+	height: 400px;
+	margin-bottom: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.mediarightphoto {
+	height: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
