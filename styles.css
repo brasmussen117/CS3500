@@ -229,6 +229,10 @@ video {
 	margin-left: 25px;
 }
 
+.video-container-youtube iframe {
+	border: none;
+}
+
 .video-container-vimeo {
 	width: 700px;
 	margin: 0 auto;
