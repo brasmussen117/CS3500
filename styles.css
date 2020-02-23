@@ -24,9 +24,6 @@ body {
 }
 
 header {
-	/*background-image: url("images/festival-crowd-1100x733.jpg");
-	background-repeat: no-repeat;
-	*/
 	height: 130px;
 	background-color: black;
 	color: #fff;
@@ -140,6 +137,7 @@ figcaption {
 
 a:link {
 	color:#1907FF;
+	text-decoration: none;
 }
 
 a:visited {
@@ -190,7 +188,7 @@ nav a:active {
 
 /*-------------- main link styles-------------- */
 
-main a:visited {
+/*main a:visited {
 	color: black;
 }
 
@@ -201,7 +199,7 @@ main a:hover {
 
 main a:active {
 	color: white;
-}
+}*/
 
 /*-------------- footer link styles-------------- */
 
@@ -262,11 +260,14 @@ video {
 }
 
 .mediaLinks{
-	border-radius: 0.50rem;
+	color: black;
     padding: 3px;
+}
+
+.mediaLinks:hover{
+	border-radius: 0.50rem;
     color: white;
-	background-color: lightgray;
-	margin: 10px;
+	background-color: darkgray;
 }
 
 /*Brenden's styles*/
@@ -310,6 +311,7 @@ table {
   border-spacing: 0;
   width: 100%;
   border: 1px solid #ddd;
+  position: relative;
 }
 
 th {
@@ -322,10 +324,12 @@ td {
   padding: 8px;
 }
 
-tr:nth-child(even){background-color: lightgray}
+tr:nth-child(even){
+	background-color: lightgray
+}
 
 tr:hover{
-	background-color: lightblue;
+	background-color: darkgray;
 }
 
 thead tr {
@@ -362,3 +366,36 @@ thead tr:hover {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/************* Social Media Icons *************/
+.social-media-icon {
+	position: relative;
+	top: 8px;
+	width: 4%;
+	height: 4%;
+}
+
+.facebook-icon {
+	width: 5.5%;
+	height: 5.5%;
+	left: 6px;
+	top: 13px;
+}
+
+/**************** Catalog Styles ******************/
+
+.catalogImages {
+	width: 100%;
+}
+
+th {
+    background: lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.catalogTable th:nth-child(1) {
+	width: 60%;
+}
+
