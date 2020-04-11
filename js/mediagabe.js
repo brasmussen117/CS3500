@@ -1,18 +1,11 @@
 // Window load event
 $(function() {
 
- // Multiple event handling
- var imgList = document.getElementsByClassName('mediaphoto');
-
-
- imgList.forEach(function(img) {
- 	img.addEventListener("mouseover", function(e) {
- 		e.target.style.display = "none";
- 	})
-
- 	img.addEventListener("mouseout", function(e) {
- 		e.target.style.display = 'inline';
- 	})
- });
+$("#btn1").click(function() {
+	$(".mediaphoto1").toggle('slow');
+});
+$("#btn2").click(function() {
+	$(".mediaphoto2").toggle('slow');
+});
  
 });
