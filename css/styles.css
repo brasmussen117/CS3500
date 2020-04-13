@@ -49,7 +49,7 @@ main {
 
 #mainphoto {
 	height: 300px;
-	background-image: url("../images/festival-crowd-1100x733.jpg");
+	background-image: url("../images/misc/festival-crowd-1100x733.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 60% 30%;
@@ -299,13 +299,14 @@ video {
 .jumbotron {
 	text-align: center;
 	color: white;
-	background-color: darkgray;
+	background-color: lightgray;
 	padding: 10px 10px;
-	background-image: url(images/hangout_concert_crowdx2000.jpeg);
+	background-image: url(../images/misc/hangout_concert_crowdx2000.jpeg);
 	background-size: 100%;
 	background-position: 50% 75%;
 	background-repeat: no-repeat;
 	background-size: center;
+	text-shadow: 3px 3px 3px black;
 }
 
 
@@ -392,14 +393,23 @@ thead tr:hover {
 	width: 100%;
 }
 
-th {
+/*th {
     background: lightgray;
     position: sticky;
     top: 0;
     z-index: 10;
+}*/
+
+.catalogTable br {
+	margin: .25in;
 }
 
-.catalogTable th:nth-child(1) {
-	width: 60%;
+.catalogTable td:nth-child(1) {
+	max-width: 60%;
 }
 
+/*scrollable menu for filters*/
+.dropdown-menu div{
+	height:200px;
+	overflow-y:auto;
+}
