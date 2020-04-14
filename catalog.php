@@ -1,6 +1,14 @@
 <?php 
-	include_once 'remove/config.php'; 
+	if (file_exists('includes/configLocal.php')) {
+		include_once 'includes/configLocal.php';
+	} else {
+		include_once 'includes/config.php';
+	}
 
+
+	######################################
+	#	following was attempt to abstract pdo-sql from rest of file, didn't have time to make it work, but left here for future use 
+	######################################
 	// function filter($sql){
 	// 	try {
 	// 		$pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
@@ -57,19 +65,19 @@
 	<p>Any questions? Visit our<a class="mediaLinks" href="about.html">ABOUT</a>page.</p> -->
 	
 
-	<p><?php 
+	<p><?php // debugger
 
-		if (isset($_GET["filter"])) {
-			echo "<p>FilterType=";
-			var_dump($_GET["filter"]);
-			echo "</p><p>FilterCriteria=";
-			var_dump($_GET[$_GET["filter"]]);
-			echo "</p>";
-		}
+		// if (isset($_GET["filter"])) {
+		// 	echo "<p>FilterType=";
+		// 	var_dump($_GET["filter"]);
+		// 	echo "</p><p>FilterCriteria=";
+		// 	var_dump($_GET[$_GET["filter"]]);
+		// 	echo "</p>";
+		// }
 
 	?></p>
 
-	<!-- quick menu for filters, state, venues, date range? -->
+	<!-- dropdown menu for filters, state, venues, date range? -->
  	<div class="dropdown">
 		<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Filters <span class="caret"></span></button>
 		<ul class="dropdown-menu">
@@ -88,7 +96,7 @@
 							while ($row = $venues->fetch()) {
 								echo 
 								'<li>
-									<a tabindex="2" href="catalog.php?filter=state&state='.
+									<a tabindex="2" href="catalog.php?filter=State&State='.
 									$row["State"]
 									.'">'.
 									$row["State"]
@@ -192,49 +200,43 @@
 	</div>
 
 	<hr>
-	
+	<!-- main content of page, list of venues, with filters if active -->
 	<table class="catalogTable">
 		<tbody>
 			<?php // pdo-sql to get list of venues, loop to put to page
 				try {
 					$pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
 					$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-					$venues = $pdo->query($sql);
-					if (
-						isset($_GET["filter"])
-					) {
+					// check if filter active
+					if (isset($_GET["filter"])) {
+						// switch on which filter selected, default same as no filter selected
 						switch ($_GET["filter"]) {
-							case "state":
-								$sql = "select * from venues where state=".$_GET["state"]."order by state";
-								echo "<p>".$sql."</p>";
+							case "State":
+								$sql = 'select * from venues where state="'.$_GET["State"].'" order by state';
 								break;
 							
-							case "city":
-								$sql = "select * from venues where city=".$_GET["city"]."order by Date";
-								echo "<p>".$sql."</p>";
+							case "City":
+								$sql = 'select * from venues where city="'.$_GET["City"].'" order by Date';
 								break;
 							
-							case "venue":
-								$sql = "select * from venues where VenueName=".$_GET["venue"]."order by Date";
-								echo "<p>".$sql."</p>";
+							case "VenueName":
+								$sql = 'select * from venues where VenueName="'.$_GET["VenueName"].'" order by Date';
 								break;
 							
-							case "date":
-								$sql = "select * from venues where date=".$_GET["date"];
-								echo "<p>".$sql."</p>";
+							case "Date":
+								$sql = 'select * from venues where date="'.$_GET["Date"];
 								break;
 							
 							default:
-								$sql = "select * from venues order by Date";
-								echo "<p>".$sql."</p>";
+								$sql = 'select * from venues order by Date';
 								break;
 						}
-					} elseif (
-						!isset($_GET["filter"])
-					) {
-						$sql = "select * from venues order by Date";
-						echo "<p>".$sql."</p>";
+					} elseif (!isset($_GET["filter"])) {
+						$sql = 'select * from venues order by Date';
 					}
+					// echo "<p>".$sql."</p>"; // debugger
+					$venues = $pdo->query($sql);
+					// main loop for getting list
 					while ($row = $venues->fetch()) {
 						echo 
 						'<tr>
