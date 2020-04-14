@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
 	<link rel="icon" href="images/misc/blue-topaz-transparent.ico" type="image/icon" sizes="16x16">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body id="top">
@@ -18,7 +18,7 @@
 	<main>
 		
 		<section>
-		<h2>Welcome to Topazity</h2>
+		<h2 id="indexheading">Welcome to Topazity</h2>
 	
 		<figure>
 			<img width="597" height="300" src="images/venues/coloradosprings-co.jpg"  alt="downtown colorado springs">
@@ -40,7 +40,7 @@
 		</section>
 		
 		<section>
-		<h2>Main Artists:</h2>
+		<h2 id="indexheading2">Main Artists:</h2>
 		
 		<div class="video-container-youtube">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/5yBSJ2Z6pjY?controls=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -71,7 +71,7 @@
 	</footer>
 		
 	</div>
-	
+	<script type="text/javascript" language="javascript" src="js/indexgabe.js"></script>
 </body>
 	
 </html>
