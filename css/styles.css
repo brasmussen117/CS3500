@@ -353,7 +353,15 @@ thead tr:hover {
 }
 
 .electricforest {
-	height: 400px;
+	height: 600px;
+}
+
+.connectwus{
+	background-color: lightblue;
+	width: 500pt;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .medialeftphoto {

@@ -1,4 +1,4 @@
-	<div id="wrapper">
+	<!-- <div id="wrapper"> -->
 	
 	<header>
 		<h1 class="text-center">Topazity</h1>
