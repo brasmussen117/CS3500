@@ -60,11 +60,11 @@
 	<p><?php 
 
 		if (isset($_GET["filter"])) {
+			echo "<p>FilterType=";
 			var_dump($_GET["filter"]);
-			echo "<br>";
-			echo ($_GET["filter"]=="state") ? "true: it's state":"false: it's not state";
-			echo "<br>";
+			echo "</p><p>FilterCriteria=";
 			var_dump($_GET[$_GET["filter"]]);
+			echo "</p>";
 		}
 
 	?></p>
@@ -73,7 +73,7 @@
  	<div class="dropdown">
 		<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Filters <span class="caret"></span></button>
 		<ul class="dropdown-menu">
-			<?php if (isset($_GET["filter"]) && !$_GET["filter"]=false) {
+			<?php if (isset($_GET["filter"]) && !($_GET["filter"]=="false")) {
 				echo '<li><a tabindex="1" href="catalog.php">Show All</a></li>';
 			}?>
 			<li class="dropdown-submenu">
@@ -199,62 +199,42 @@
 				try {
 					$pdo = new PDO(DBCONNSTRING,DBUSER,DBPASS);
 					$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-					$newGet = $_GET["filter"];
-					if ( // check for filter then switch
+					$venues = $pdo->query($sql);
+					if (
 						isset($_GET["filter"])
 					) {
-						echo "<p>Filter switch running...</p>";
-						var_dump($_GET["filter"]);
-						global $newGet;
-						var_dump($newGet);
-						// if ($_GET["filter"]=="state") {
-						// 	echo "<p>state selected</p>";
-						// 		$sql = "select * from venues where state=".
-						// 			$_GET["state"]
-						// 			."order by state";
-						// }
 						switch ($_GET["filter"]) {
 							case "state":
-								echo "<p>state selected</p>";
-								$sql = "select * from venues where state=".
-									$_GET["state"]
-									."order by state";
+								$sql = "select * from venues where state=".$_GET["state"]."order by state";
+								echo "<p>".$sql."</p>";
 								break;
 							
 							case "city":
-								echo "<p>city selected</p>";
-								$sql = "select * from venues where city=".
-									$_GET["city"]
-									."order by Date";
+								$sql = "select * from venues where city=".$_GET["city"]."order by Date";
+								echo "<p>".$sql."</p>";
 								break;
 							
 							case "venue":
-								echo "<p>venue selected</p>";
-								$sql = "select * from venues where VenueName=".
-									$_GET["venue"]
-									."order by Date";
+								$sql = "select * from venues where VenueName=".$_GET["venue"]."order by Date";
+								echo "<p>".$sql."</p>";
 								break;
 							
 							case "date":
-								echo "<p>date selected</p>";
-								$sql = "select * from venues where date=".
-									$_GET["date"];
+								$sql = "select * from venues where date=".$_GET["date"];
+								echo "<p>".$sql."</p>";
 								break;
 							
 							default:
-								echo "<p>default selected</p>";
 								$sql = "select * from venues order by Date";
+								echo "<p>".$sql."</p>";
 								break;
 						}
 					} elseif (
 						!isset($_GET["filter"])
 					) {
-						echo "<p>No filter</p>";
 						$sql = "select * from venues order by Date";
+						echo "<p>".$sql."</p>";
 					}
-					
-					$venues = $pdo->query($sql);
-					// if (!isset($_GET["id"])) {
 					while ($row = $venues->fetch()) {
 						echo 
 						'<tr>
@@ -269,7 +249,6 @@
 						</tr>'
 						;
 					};
-					// }
 					$pdo = null;
 			    }
 			    catch (PDOException $e) {
