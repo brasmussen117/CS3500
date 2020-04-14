@@ -1,7 +1,9 @@
 <?php 
-	if (file_exists('includes/configLocal.php')) {
-		include_once 'includes/configLocal.php';
-	} else {include_once 'includes/config.php';}
+	// if (file_exists('includes/configLocal.php')) {
+	// 	include_once 'includes/configLocal.php';
+	// } else {
+		include_once 'includes/config.php';
+	// }
 
 	######################################
 	#	following was attempt to abstract pdo-sql from rest of file, didn't have time to make it work, but left here for future use 
