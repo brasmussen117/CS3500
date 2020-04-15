@@ -23,6 +23,15 @@ body {
 	border-color: #fff;
 }
 
+#top {
+	background-color: black;
+}
+
+#cataloginfo {
+	text-align: center;
+	display: inline-block;
+}
+
 header {
 	height: 130px;
 	background-color: black;

@@ -241,9 +241,9 @@
 						echo 
 						'<tr>
 							<td>
-								<p>'.date_format(new DateTime($row["Date"]),"M d, Y").'</p>
-								<p><strong>'.$row["VenueName"].'</strong></p>
-								<p>'.$row["City"].', '.$row["State"].'</p>
+								<p id="cataloginfo">'.date_format(new DateTime($row["Date"]),"M d, Y").'</p>
+								<p id="cataloginfo"><strong>'.$row["VenueName"].'</strong></p>
+								<p id="cataloginfo">'.$row["City"].', '.$row["State"].'</p>
 							</td>
 							<td><img class="catalogImages" src="images/venues/'.$row["VenueImage"]
 								.'" alt="'.$row["VenueName"].' '.
