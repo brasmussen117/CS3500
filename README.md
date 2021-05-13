@@ -11,8 +11,4 @@ Gabe Soto
 
 # Project Description
 
-[TBD]
-
-# Known Issues
-
-None
+This is a site for a fictional touring music festival. It shows the acts and tour dates/locations. 
